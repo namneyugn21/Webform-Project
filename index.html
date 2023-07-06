@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Vietnam Airlines Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-bar"><img src="vna_logo.jpeg" atl="Vietnam Airlines Logo" width="400px" /></div>
+    <h1 id="title">Xin chào!</h1>
+    <p id="description">Welcome to Vietnam Airlines survey!<br>In order to provide the best experience for your next trip, 
+      please fill out the survey!</p>
+    <form id="survey-form">
+      <fieldset class="first-fieldset">
+        <label for="name">First Name</label><input type="text" id="name" name="first-name" required>
+        <label for="last-name">Last Name</label><input type="text" id="last-name" name="last-name" required>
+        <label for="email">Email</label><input type="email" id="email" name="email" required>
+        <label for="number">Number of Flights Taken: <input type="number" id="number" name="phone-number" min="0" max="128" required></label>
+        <label for="dropdown">Based on your experience, how would you rate Vietnam Airlines customer services?
+          <select id="dropdown" name="cs-rating">
+            <option value="">out of 5</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset class="second-fieldset">
+        <p>Select the region you travel most frequently with Vietnam Airlines:</p>
+        <div class="radio-container">
+          <label for="region-asia"><input type="radio" id="region-asia" name="region" /> Asia </label>
+          <label for="region-na"><input type="radio" id="region-na" name="region" /> North America </label>
+          <label for="region-sa"><input type="radio" id="region-sa" name="region" /> South America </label>
+          <label for="region-europe"><input type="radio" id="region-europe" name="region" /> Europe </label>
+          <label for="region-africa"><input type="radio" id="region-africa" name="region" /> Africa </label>
+          <label for="region-australia"><input type="radio" id="region-australia" name="region" /> Australia </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <p>Select all that is applicable. Which of these flying route(s) you want Vietnam Airlines to open?</p>
+        <label for="hcm-yvr"><input type="checkbox" id="hcm-yvr" name="fly-route" value="hcm-yvr"/> Ho Chi Minh City - Vancouver</label>
+        <label for="hcm-wlg"><input type="checkbox" id="hcm-wlg" name="fly-route" value="hcm-wlg"/> Ho Chi Minh City - Wellington</label>
+        <label for="hcm-sea"><input type="checkbox" id="hcm-sea" name="fly-route" value="hcm-sea"/> Ho Chi Minh City - Seattle</label>
+        <label for="hcm-lax"><input type="checkbox" id="hcm-lax" name="fly-route" value="hcm-lax"/> Ho Chi Minh City - Los Angeles</label>
+      </fieldset>
+      <fieldset>
+        <label for="feedback">Please let us know if there is anything you want Vietnam Airlines to improve:</label>
+          <textarea id="feedback" name="customer-feedback" rows="5" cols="50" placeholder="Fly with hearts!"></textarea>
+      </fieldset>
+      <fieldset>
+        <label for="acknowledgement"><input type="checkbox" id="acknowledgement" name="acknowledgement-of-terms-and-agreements" required /> Agreed with the terms & conditions </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
